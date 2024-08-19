@@ -1,0 +1,8 @@
+The HR Manager logs into the system.
+HR Manager adds a supply manager role.
+HR Manager gives the supply manager role to an existing worker.
+HR Manager logs out.
+Supply Manager logs into the system.
+Supply Manager adds product to an existing supplier.
+Supply Manager orders the product from the supplier.
+Supply Manager requests the order’s price.

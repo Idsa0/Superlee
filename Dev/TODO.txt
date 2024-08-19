@@ -1,0 +1,14 @@
+frontend:
+    all unused services
+
+tests:
+    logout
+    getShiftsByBranchAndDate
+    getWorkerHistory
+    getAllRoles
+    getWorkerRoles
+    removeWorkerRole
+
+backend:
+    adding shifts should check for branch existence
+    role related functionality

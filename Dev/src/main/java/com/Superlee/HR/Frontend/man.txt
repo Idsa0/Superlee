@@ -1,0 +1,127 @@
+List o available commands before login:
+
+load
+    load the data from the database
+
+login <username> <password>
+    login to the system
+
+help
+    print this message
+
+exit
+    exit the program
+
+
+
+
+List of available commands for workers:
+
+avlb <shift_id>
+    add availability for a shift with the specified id
+
+unavlb <shift_id>
+    remove availability for a shift with the specified id
+
+email <email>
+    change your email to the specified email
+
+phone <phone>
+    change your phone number to the specified phone number
+
+password <password>
+    change your password to the specified password
+
+bank <bank>
+    change your bank account to the specified bank account
+
+branch <branch>
+    change your main branch to the specified branch
+
+details [all]
+    print your details
+
+help
+    print this message
+
+logout
+    logout from the system and return to the login screen
+
+exit
+    exit the program
+
+
+
+
+List of available commands for HR managers:
+
+addw <id> <firstname> <surname>
+    add a new worker with the specified id, first name and second name
+
+assw <worker_id> <shift_id> <role>
+    assign a worker to a shift
+
+unassw <worker_id> <shift_id>
+    unassign a worker from a shift
+
+shift <id>
+    get a shift with the specified id
+
+shift -a <id>
+    get a list of all workers assignable to the specified shift
+
+shift -r <id> <role> <amount>
+    set the amount of workers with the specified role needed for a shift
+
+shift <start> <end> <branch>
+    get a list of all shifts at the specified branch between the specified start and end time
+    must be formatted as yyyy-MM-ddTHH:mm (e.g. 1996-04-15T00:00)
+
+adds <start> <end> <branch>
+    add a new shift with the specified start time, end time and branch
+    must be formatted as yyyy-MM-ddTHH:mm (e.g. 1996-04-15T00:00)
+
+workers
+    get a list of all workers
+
+workers -r <role>
+    get a list of all workers with the specified role
+
+workers -n <firstname> <surname>
+    get a worker with the specified name
+
+workers -i <id>
+    get a worker with the specified id
+
+workers -s <id>
+    get a list of all workers assigned to the specified shift
+
+wh <id>
+    get the work history of a worker with the specified id
+
+addr <worker> <role>
+    add the given role to the specified worker
+
+addb <branch> <address> <manager>
+    add a new branch with the specified name, address and manager
+
+branch <name>
+    get a branch with the specified name
+
+branches
+    get a list of all branches
+
+roles [worker]
+    get a list of all roles or all roles for a worker if specified
+
+roles -a <role>
+    add a new role with the specified name
+
+help
+    print this message
+
+logout
+    logout from the system and return to the login screen
+
+exit
+    exit the program
